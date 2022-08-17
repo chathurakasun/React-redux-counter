@@ -105,3 +105,17 @@ Again in the Counter, useSelector can be used for access the state.showCounter
 ```
   const show = useSelector((state) => state.showCounter);
 ```
+
+### How to work with Redux state correctly
+
+In the reducer function, when we have more than 1 state object, return for the relavant action type from the dispatch should be done for all the state objects.
+because in the reducer function, the return object will not merge, it will replace the existing object.
+
+Also should never mutate the existing state. Instead always override it by return a brandnew state object. Objects are reference types in JS.
+
+### Redux Challenges & Introducing Redux Toolkit
+
+More easier way to do Redux code.
+
+- prevent typos in identifiers
+- reduce the amount of data that manage/ small reducer code
