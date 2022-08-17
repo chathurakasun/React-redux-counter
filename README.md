@@ -85,3 +85,5 @@ const increaseHandler = () => {
 **Updated Counter APP**
 
 ![update1](/src/assets/update1.jpg)
+
+### Working with Multiple State Properties
