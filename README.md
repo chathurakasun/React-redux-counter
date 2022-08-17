@@ -87,3 +87,21 @@ const increaseHandler = () => {
 ![update1](/src/assets/update1.jpg)
 
 ### Working with Multiple State Properties
+
+Consider the toggle show : counter div when click the toggle button
+
+In the Counter, create `toggleCounterHandler` to dispatch
+
+```
+const toggleCounterHandler = () => {
+    dispatch({ type: "toggle" });
+  };
+```
+
+In the reducer, handle action type: toggle and concern about both state objects for each action type
+
+Again in the Counter, useSelector can be used for access the state.showCounter
+
+```
+  const show = useSelector((state) => state.showCounter);
+```
